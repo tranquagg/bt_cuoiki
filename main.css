@@ -107,7 +107,15 @@ main{
 }
 
 table{
+    width: 100%;
     color:#fff;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 1px solid #fff;
+}
+td{
+    padding: 10px;
+    border: 1px solid #fff;  
 }
 
 .project{
