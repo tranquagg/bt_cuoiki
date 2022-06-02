@@ -14,14 +14,10 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 .header{
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 300px;
     background: url(./imgae/background02.jpg) no-repeat center;
     background-size: cover;
-    border-bottom: 4px solid #fff;
 }
 
 .header__top{
@@ -62,25 +58,24 @@ body{
     text-align: center;
 }
 
-.header__logo{
+
+.logo{
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: #fff;
+}
+.logo img{
     position: relative;
     width: 200px;
     height: 200px;
-    bottom: 0;
+    border-radius: 100%;
+    border: 4px solid #fff;
     left: 50%;
     transform: translate(-50%,-50%);
 }
 
-.header__logo img{
-    width: 100%;
-    height: 100%;
-    border-radius: 100%;
-    border: 4px solid #fff;
-    z-index: 1;
-}
-
 main{
-    margin-top: 300px;
     background-color: #000;
     padding-bottom: 50px;
 }
@@ -95,6 +90,9 @@ main{
     color:#fff;
     border-bottom: 1px solid #fff;
     padding: 10px 0;
+}
+.title i{
+    margin-right: 5px;
 }
 .infor__detail{
     padding: 10px 20px;
@@ -129,24 +127,22 @@ td{
     font-weight: 400;
     color:#fff;
     padding: 10px 0;
+ 
 }
-.lib-img{
-    width: 100%;
+.lib-img .title{
+    margin-bottom: 30px;
 }
-
 .lib-img__detail{
-    margin: 30px 0;
+    margin: -7.5px;
+    padding :7.5px;
     width: 100%;
     height: 500px;
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 33% 33% 33%;
+    grid-template-rows: 33.333% 33.333% 33.333%;
     gap: 5px;
 }
 
-.lib-img__item {
-    width: 100%;
-}
 .lib-img__item:nth-child(1){
     grid-column: 1/2;
     grid-row: 1/4;
@@ -185,7 +181,7 @@ td{
     background-size: cover;  
 }
 .lib-img__item:nth-child(6){
-    grid-column: 4/;
+    grid-column: 4/5;
     grid-row: 2/4;
     background-image: url(./imgae/openday5.jpg); 
     background-position: center;
